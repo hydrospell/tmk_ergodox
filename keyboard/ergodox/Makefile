@@ -115,4 +115,6 @@ micro: all
 cub: OPT_DEFS += -DKEYMAP_CUB
 cub: all
 
+siah: OPT_DEFS += -DKEYMAP_SIAH
+siah: all
 
