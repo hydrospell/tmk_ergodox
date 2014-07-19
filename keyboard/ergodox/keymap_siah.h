@@ -23,21 +23,21 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     KEYMAP(  // layout: layer 0: default
         // left hand
-        GRV, 1,   2,   3,   4,   5,   LBRC,
+        GRV, 1,   2,   3,   4,   5,   QUOT,
         TAB, Q,   W,   E,   R,   T,   LBRC,
         FN0 ,A,   S,   D,   F,   G,
         LSFT,Z,   X,   C,   V,   B,   FN0,
         FN1, FN6, CAPS,LALT,LGUI,
-                                      DELETE, HOME,
+                                      DEL, HOME,
                                            END,
                                  SPC,BSPC,SPC,
         // right hand
-             RBRC,6,   7,   8,   9,   0,   POWER,
-             LBRC,Y,   U,   I,   O,   P,  LBRC,
-                  H,   J,   K,   L,   SCLN,RSFT,
+             RBRC,6,   7,   8,   9,   0,  FN7,
+             RBRC,Y,   U,   I,   O,   P,  BSLS,
+                  H,   J,   K,   L,   SCLN,QUOT,
              FN4, N,   M,   COMM,DOT, SLSH,RSFT,
                        LEFT,UP,  DOWN,RGHT,FN4,
-        PGUP,DEL,
+        PGUP,PAUS,
         PGDN,
         INS, ENT, SPC
     ),
@@ -201,7 +201,7 @@ enum function_id {
  * Fn action definition
  */
 static const uint16_t PROGMEM fn_actions[] = {
-    ACTION_MODS_TAP_KEY(MOD_LCTL, KC_ESCAPE),          // FN0 - switch to Layer0
+    ACTION_MODS_TAP_KEY(MOD_LCTL, KC_ESC),          // FN0 - switch to Layer0
     ACTION_LAYER_MOMENTARY(1),                      // FN1 - push Layer1
     ACTION_DEFAULT_LAYER_SET(2),                    // FN2 - switch to Layer2
     ACTION_LAYER_MOMENTARY(3),                      // FN3 - push Layer3
