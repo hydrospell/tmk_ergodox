@@ -23,37 +23,37 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     KEYMAP(  // layout: layer 0: default
         // left hand
-        GRV, 1,   2,   3,   4,   5,   QUOT,
+        GRV, 1,   2,   3,   4,   5,   MINS,
         TAB, Q,   W,   E,   R,   T,   LBRC,
         FN0 ,A,   S,   D,   F,   G,
-        LSFT,Z,   X,   C,   V,   B,   FN0,
-        FN1, FN6, CAPS,LALT,LGUI,
+        LSFT,Z,   X,   C,   V,   B,   X,
+        FN1, Z, V,LALT,LGUI,
                                       DEL, HOME,
-                                           END,
+                                         END,
                                  SPC,BSPC,SPC,
         // right hand
-             RBRC,6,   7,   8,   9,   0,  FN7,
+             EQL ,6,   7,   8,   9,   0,  BSPC,
              RBRC,Y,   U,   I,   O,   P,  BSLS,
                   H,   J,   K,   L,   SCLN,QUOT,
-             FN4, N,   M,   COMM,DOT, SLSH,RSFT,
-                       LEFT,UP,  DOWN,RGHT,FN4,
-        PGUP,PAUS,
+             FN2, N,   M,   COMM,DOT, SLSH,RSFT,
+                       LGUI,RALT,DOWN,RGHT,FN1,
+        PGUP, A,
         PGDN,
-        INS, ENT, SPC
+        B, ENT, SPC
     ),
 
     KEYMAP(  // layout: layer 1: F-keys instead of numbers
         // left hand
         TRNS,F1,  F2,  F3,  F4,  F5,  F6,
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+        TRNS,TRNS,UP,  TRNS,TRNS,TRNS,TRNS,
+        TRNS,LEFT,DOWN,RGHT,TRNS,TRNS,
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
         TRNS,TRNS,TRNS,LALT,LGUI,
                                       TRNS,TRNS,
                                            TRNS,
                                  LCTL,LSFT,TRNS,
         // right hand
-             F7,  F8,  F9,  F10, F11, F12, MINS,
+             F7,  F8,  F9,  F10, F11, F12, FN7,
              TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,RBRC,
                   TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
              TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
